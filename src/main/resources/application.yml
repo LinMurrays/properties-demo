@@ -1,0 +1,62 @@
+ #以空格的缩进来控制层级关系;只要是左对齐的一列数据，都是同一个层级的,属性和值也是大小写敏感;
+ server:
+   port: 8081
+   path: /
+ spring:
+   profiles:
+    active: prod
+    #激活prod环境
+
+     #这是springboot起用了多配置文件的用法，是采用---来区分，并且在默认的配置那里使生效
+    #还可以使用打包jar包，采用命令行的方式来执行
+    #java -jar spring-boot-02-config-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev;
+
+#字符串默认不用加上单引号和双引号
+ name: "zhangsan \n lisi"
+ name2: 'zhangsan \n lisi'
+
+ #对象、Map(属性和值)(键值对):
+ tom:
+   lastname: tom
+   age: 20
+
+ tom2:
+    lastname: jerry
+    age: 21
+
+ tom3: {lastName:zhangsan,age:18}
+
+ tom4:
+   -cat
+   -toms
+ tom5: [cat1,cat2]
+
+
+ person:
+   lastName: hello
+   age: 18
+   boss: false
+   birth: 2017/12/12
+   maps: {k1: v1,k2: 12}
+   lists:
+     -list1
+     -list2
+   lists2: [list2,list3]
+   dog:
+     name: dog1
+     age: 11
+
+---
+ server:
+   port: 8082
+ spring:
+     profiles: prod
+   #这是表示prod环境
+
+
+---
+   server:
+     port: 8083
+   spring:
+     profiles: dev
+     #这是表示prod环境

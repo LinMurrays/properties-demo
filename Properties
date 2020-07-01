@@ -1,0 +1,24 @@
+
+                    @ConfigurationProperties        @Value
+
+松散绑定(松散语法)          支持                          不支持
+SpEL                     不支持                                            支持（数据运算）
+JSR303数据校验（@valid）  支持                          不支持
+ 复杂类型封装             支持(比如map，list)                         不支持（支持简单的字符串）
+
+如果说，我们只是在某个业务逻辑中需要获取一下配置文件中的某项值，使用@Value;
+如果说，我们专门编写了一个javaBean来和配置文件进行映射，我们就直接使用@ConfigurationProperties;
+
+加载顺序
+    springboot启动会扫描一下位置的application.properties或者application.yml作为默认的配置文件
+    工程根目录:./config/
+    工程根目录：./
+    classpath:/config/
+    classpath:/
+    加载的优先级顺序是从上向下加载，并且所有的文件都会被加载，高优先级的内容会覆盖底优先级的内容，形成互补配置
+
+yml和properties：
+    正常的情况是先加载yml，接下来加载properties文件。如果相同的配置存在于两个文件中。最后会使用properties中的配置。
+    最后读取的优先集最高。两个配置文件中的端口号不一样会读取properties中的端口号。
+
+    工程根路径下或者根路径的config下面的配置文件，在工程打包时候不会被打包进去
