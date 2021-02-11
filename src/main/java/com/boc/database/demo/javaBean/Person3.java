@@ -1,4 +1,4 @@
-package demo.demo.javaBean;
+package com.boc.database.demo.javaBean;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;

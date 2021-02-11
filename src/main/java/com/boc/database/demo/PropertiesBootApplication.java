@@ -1,4 +1,4 @@
-package demo.demo;
+package com.boc.database.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

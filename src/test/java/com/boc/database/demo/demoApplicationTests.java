@@ -1,8 +1,8 @@
-package demo.demo;
+package com.boc.database.demo;
 
-import demo.demo.javaBean.Person;
-import demo.demo.javaBean.Person2;
-import demo.demo.javaBean.Person3;
+import com.boc.database.demo.javaBean.Person;
+import com.boc.database.demo.javaBean.Person2;
+import com.boc.database.demo.javaBean.Person3;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

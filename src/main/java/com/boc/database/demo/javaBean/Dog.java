@@ -1,6 +1,6 @@
-package demo.demo.javaBean;
+package com.boc.database.demo.javaBean;
 
-public class ValueBean {
+public class Dog {
     private String name;
 
     public String getName() {

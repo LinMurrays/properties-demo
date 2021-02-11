@@ -1,4 +1,4 @@
-package demo.demo;
+package com.boc.database.demo;
 
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;

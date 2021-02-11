@@ -1,7 +1,7 @@
-package demo.demo.Config;
+package com.boc.database.demo.Config;
 
 
-import demo.demo.Service.HelloService;
+import com.boc.database.demo.Service.HelloService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
