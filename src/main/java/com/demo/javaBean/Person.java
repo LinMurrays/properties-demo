@@ -1,4 +1,4 @@
-package com.boc.database.demo.javaBean;
+package com.demo.javaBean;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package com.boc.database.demo.javaBean;
+package com.demo.javaBean;
 
 public class Dog {
     private String name;

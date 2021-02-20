@@ -1,8 +1,8 @@
-package com.boc.database.demo;
+package com.demo;
 
-import com.boc.database.demo.javaBean.Person;
-import com.boc.database.demo.javaBean.Person2;
-import com.boc.database.demo.javaBean.Person3;
+import com.demo.javaBean.Person;
+import com.demo.javaBean.Person2;
+import com.demo.javaBean.Person3;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,11 +11,11 @@ import org.springframework.context.ApplicationContext;
 @SpringBootTest
 class demoApplicationTests {
 	@Autowired
-     Person person;
+    Person person;
 	@Autowired
-     Person2 person2;
+    Person2 person2;
 	@Autowired
-     Person3 person3;
+    Person3 person3;
 
 	@Autowired
 	ApplicationContext ioc;
